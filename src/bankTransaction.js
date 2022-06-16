@@ -10,9 +10,17 @@ class BankTransaction {
         return this.date
     }
     getCredit() {
-        return Number(this.date.toFixed(2))
+        return Number(this.credit.toFixed(2))
     }
     getDebit() {
-        return Number(this.date.toFixed(2))
+        return Number(this.debit.toFixed(2))
     }
 }
+
+module.exports = BankTransaction
+
+// const bank = new BankTransaction('2', 4, 3)
+
+// console.log('date', bank.getDate())
+// console.log('depo', bank.getCredit())
+// console.log('withdraw', bank.getDebit())
