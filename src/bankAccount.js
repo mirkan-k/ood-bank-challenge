@@ -7,12 +7,13 @@ class BankAccount {
         this.statement = new Statement()
     }
 
-    createTransaction() {
-
+    createTransaction(date, credit, debit) {
+        const statement = new Statement(date, credit, debit)
+        return statement.addTransaction(date, credit, debit)
     }
 
     getTransaction() {
-        
+
     }
 }
 
