@@ -20,11 +20,16 @@ class BankStatement {
         }
 
         this.transactionList.push(newTransaction)
-        return this.transactionList
+        return true //this.transactionList
     }
 
     getTransaction(date) {
+        const transaction = this.transactionList.find(t => t.date === date)
+        return transaction
+    }
 
+    getAllTransactions() {
+        return this.transactionList
     }
 
     getCurrentBalance() {
@@ -46,6 +51,9 @@ module.exports = BankStatement
 
 const statement = new BankStatement()
 
-console.log(statement.transactionList)
-console.log(statement.addTransaction('2',2,0))
-console.log(statement.addTransaction('2',2,0))
+// console.log(statement.addTransaction('2',2,0))
+// console.log(statement.addTransaction('2',2,0))
+// console.log(statement.addTransaction('2',2,0))
+// console.log(statement.getTransaction('2'))
+console.log(statement.getAllTransactions())
+console.log('statement end')

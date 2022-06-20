@@ -7,6 +7,7 @@ class BankTransaction {
     }
 
     getDate() {
+        // TODO: add the Date() function in here
         return this.date
     }
     getCredit() {
