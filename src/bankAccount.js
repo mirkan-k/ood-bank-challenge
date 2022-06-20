@@ -21,7 +21,7 @@ console.log(acc.createTransaction('2',2,0))
 console.log(acc.transactionList)
 // console.log(statement.addTransaction('2',2,0))
 // console.log(statement.addTransaction('2',2,0))
-console.log(acc.getTransaction('2'))
+console.log('get tra', acc.getTransaction('2'))
 // console.log(statement.transactionList)
 console.log('account end')
 
